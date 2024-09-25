@@ -9,6 +9,7 @@ public class Lab3Ex3 {
 		System.out.println("Enter a string:");
 		String str=sc.next();
 		System.out.println("Modified string: " + alterString(str));
+		sc.close();
 	}
 
 	public static String alterString(String str) {

@@ -8,27 +8,27 @@ public class Lab3Ex5 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the text (type 'END' on a new line to stop):");
 
-        StringBuilder text = new StringBuilder();
-        String line;
-        int lineCount = 0;
+        StringBuilder str = new StringBuilder();
+        String s;
+        int count = 0;
         
-        while (!(line = sc.nextLine()).equals("END")) {
-            text.append(line).append("\n");
-            lineCount++;
+        while (!(s = sc.nextLine()).equals("END")) {
+            str.append(s).append("\n");
+            count++;
         }
 
         sc.close();
  
-        String fullText = text.toString();
+        String s1 = str.toString();
         
       
-        int charCount = fullText.length(); 
-        String[] words = fullText.trim().split("\\s+");
-        int wordCount = (fullText.trim().isEmpty()) ? 0 : words.length;
+        int charCount = s1.length(); 
+        String[] words = s1.trim().split("\\s+");
+        int wordCount = (s1.trim().isEmpty()) ? 0 : words.length;
         
 
         System.out.println("Number of characters: " + charCount);
         System.out.println("Number of words: " + wordCount);
-        System.out.println("Number of lines: " + lineCount);
+        System.out.println("Number of lines: " + count);
     }
 }

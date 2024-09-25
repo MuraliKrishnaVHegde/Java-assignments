@@ -8,6 +8,7 @@ public class Lab3Ex4 {
 		System.out.println("Enter a number:");
 		int num=sc.nextInt();
 		System.out.println("New number after modification: " + modifyNumber(num));
+		sc.close();
 	}
 
 	public static int modifyNumber(int num1) {

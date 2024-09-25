@@ -15,6 +15,7 @@ public class Lab2Ex3 {
 		arr=getSorted(arr);
 		for(int i:arr)
 			System.out.println(i);
+		sc.close();
 	}
 	public static int[] getSorted(int[] arr)
 	{

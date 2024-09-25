@@ -9,6 +9,7 @@ public class Lab3Ex2 {
 		System.out.println("Enter a string:");
 		String input = sc.next();
 		System.out.println("Output: " + getImage(input));
+		sc.close();
 
 	}
 
